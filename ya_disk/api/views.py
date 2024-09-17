@@ -32,12 +32,3 @@ class YaDiskApiViw(APIView):
         if res.status_code == 200:
             return Response({'res': res.json()})
 
-# p_k = 'https://disk.yandex.ru/i/z-dLvtbrXUpU2A'
-
-# dir = 'https://disk.yandex.ru/d/PwXgexfrqCMB2Q'
-# public = f'https://cloud-api.yandex.net/v1/disk/public/resources?public_key={dir}'
-
-# res = requests.get(public)
-# if res.status_code == 200:
-#     for k, v in res.json().items():
-#         print(k, v)
